@@ -6,12 +6,13 @@ A weekend activity planning app built with Google's Agent Development Kit (ADK).
 
 - `agent.py` — Root agent definition (Gemini 3.5 Flash)
 - `data/weakend_data.json` — Jaipur weekend activity/place/food data
-- `tests/` — Test suite
+- `__init__.py` — Package init
+- `.gitignore` — Ignore rules for `.env`, `.adk/`, `__pycache__/`, `venv/`, etc.
 
 ## Getting Started
 
-1. Copy `.env.example` to `.env` and add your Google API key.
-2. Install dependencies: `pip install -r requirements.txt`
+1. The `.env` file contains your Google API key and is git-ignored for security.
+2. Install dependencies: `pip install google-adk`
 3. Run the agent: `python -m plan_my_weakend.agent`
 
 ## Data
